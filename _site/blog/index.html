@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <style type="text/css">
-      .anton-regular {
+      .anton-regular, h2 {
         font-family: "Anton", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -31,7 +31,7 @@
       .citation {
         color: #888888ff;
         font-size: 18px;
-        border-left: 10px solid #f505f1ff;
+        border-left: 7px solid #f505f1ff;
         padding-left: 15px;
       }
       .tagline {
@@ -41,19 +41,67 @@
         font-size: 28px;
         padding: 20px 0;
       }
+      a, a:link {
+        color: #f505f1ff;
+      }
+      .thing {
+        border-bottom: 1px solid #393939ff;
+      }
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #000;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 15px 0;
+        display: flex;
+        gap: 1rem;
+      }
+      nav li a {
+        text-decoration: none;
+        font-weight: 500;
+      }
+      nav li a:hover {
+        text-decoration: underline;
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+      }
     </style>
   </head>
   <body class="text-white" style="background-color: #000;">
-    <main class="container pt-5 px-4">
+    <nav class="thing">
+      <div class="container">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container px-4">
 
-      <div style="margin-top: 150px;">
-        <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A here-and-there blog</span>
+      <div style="margin-top: 100px;">
+        <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A now-and-again blog</span>
 
-        <h1 class="anton-regular heading">Blog</h1>
+        <h1 class="anton-regular heading">&ldquo;With Floods and Whirlwinds of tempestuous fire&rdquo;</h1>
 
       </div>
 
       <span class="citation">Milton, Paradise Lost, 1.77</span>
+
+      <div class="mt-5">
+      <h2>Blog posts</h2>
+<ul>
+<li><a href="/blog/my-first-post/">And this Empyreal substance cannot fail</a></li>
+<li><a href="/blog/my-second-post/">My second post</a></li>
+</ul>
+      </div>
 
       <h2 class="sorts-mill-goudy-regular-italic mt-5 tagline">I make things for the internet, displayed on little squares of glass everyone carries in their pockets.</h2>
 
@@ -66,13 +114,9 @@
       From what highth fall'n, so much the stronger prov'd
       He with his Thunder: and till then who knew</p>
 
-      <div>
-      <h2>Blog posts</h2>
-<ul>
-<li><a href="/blog/my-first-post/">My first post</a></li>
-<li><a href="/blog/my-second-post/">My second post</a></li>
-</ul>
-      </div>
     </main>
+    <footer class="container px-4" style="margin-top: 60px;">
+      <p class="sorts-mill-goudy-regular-italic">© 2025. Made with <a href="https://www.11ty.dev/">eleventy</a> and love.</p>
+    </footer>
   </body>
 </html>

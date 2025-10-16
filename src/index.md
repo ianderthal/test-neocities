@@ -1,11 +1,8 @@
 ---
-title: "With Floods and Whirlwinds of tempestuous fire"
 layout: "base.njk"
 ---
 
-
-
-## Blog Posts
+## Latest Posts
 
 <ul>
 {% for post in collections.posts %}
