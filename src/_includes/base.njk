@@ -81,22 +81,26 @@
     <nav class="thing">
       <div class="container">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
+          <li><a href="/index">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
         </ul>
       </div>
     </nav>
     <main class="container px-4">
 
       <div style="margin-top: 100px;">
-        <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A now-and-again blog</span>
+        {% if page.url == "/" %}
+          <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A now-and-again blog</span>
+        {% endif %}
 
-        <h1 class="anton-regular heading">&ldquo;With Floods and Whirlwinds of tempestuous fire&rdquo;</h1>
+        <h1 class="anton-regular heading">{{ title }}</h1>
 
       </div>
 
-      <span class="citation">Milton, Paradise Lost, 1.77</span>
+      {% if page.url == "/" %}
+        <span class="citation">Milton, Paradise Lost, 1.77</span>
+      {% endif %}
+
 
       <div class="mt-5">
       {{ content | safe }}

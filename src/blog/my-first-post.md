@@ -1,5 +1,8 @@
 ---
 title: "And this Empyreal substance cannot fail"
+date: "2025-10-12"
+preview: "I think this is the beginning. For 200 million years You are the sunshine of my life, baby
+That's why I'll always stay around."
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec dictum velit. Aliquam in lorem odio. Quisque iaculis orci at purus pellentesque suscipit. Morbi mollis id sem vitae rutrum. Nam ornare, urna lobortis mattis tempor, tortor neque vulputate nulla, nec semper nulla felis at nulla.
