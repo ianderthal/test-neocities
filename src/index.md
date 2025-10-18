@@ -7,7 +7,11 @@ title: "With Floods and Whirlwinds of tempestuous fire"
 
 <ul>
 {% for post in collections.posts %}
-  <li><a href="{{ post.url }}">{{ post.data.date }} {{ post.data.title }}</a></li>
+  <li>
+    <article>
+      <a href="{{ post.url }}">{{ post.data.date }} {{ post.data.title }}</a>
+    </article>
+  </li>
 {% endfor %}
 </ul>
 

@@ -40,12 +40,16 @@
       .tagline {
         border-top: 1px solid #393939ff;
         border-bottom: 1px solid #393939ff;
-        color: #f505f1ff;
-        font-size: 28px;
+        /* color: #f505f1ff; */
+        font-size: 24px;
         padding: 20px 0;
       }
       a, a:link {
         color: #f505f1ff;
+      }
+      a:hover,
+      a:active {
+        text-decoration: none;
       }
       .thing {
         border-bottom: 1px solid #393939ff;
@@ -103,19 +107,12 @@
 
 
       <div class="mt-5">
-      {{ content | safe }}
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
       </div>
 
       <h2 class="sorts-mill-goudy-regular-italic mt-5 tagline">I make things for the internet, displayed on little squares of glass everyone carries in their pockets.</h2>
-
-      <p class="mt-5">From him, who in the happy Realms of Light Cloth'd with transcendent brightness didst out-shine
-      Myriads though bright: If he Whom mutual league,
-      United thoughts and counsels, equal hope
-      And hazard in the Glorious Enterprize,
-      Joynd with me once, now misery hath joynd [ 90 ]
-      In equal ruin: into what Pit thou seest
-      From what highth fall'n, so much the stronger prov'd
-      He with his Thunder: and till then who knew</p>
 
     </main>
     <footer class="container px-4" style="margin-top: 60px;">
