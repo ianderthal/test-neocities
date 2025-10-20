@@ -115,20 +115,6 @@
     </nav>
     <main class="container px-4">
 
-      <div style="margin-top: 100px;">
-        {% if page.url == "/" %}
-          <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A now-and-again blog</span>
-        {% endif %}
-
-        <h1 class="anton-regular heading">{{ title }}</h1>
-
-      </div>
-
-      {% if page.url == "/" %}
-        <span class="citation">Milton, Paradise Lost, 1.77</span>
-      {% endif %}
-
-
       <div class="mt-5">
       {% block content %}
         {{ content | safe }}

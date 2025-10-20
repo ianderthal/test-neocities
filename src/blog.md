@@ -3,7 +3,7 @@ title: "Blog"
 layout: "base.njk"
 ---
 
-## Posts
+ <h1 class="anton-regular heading">{{ title }}</h1>
 
 <ul>
 {% for post in collections.posts %}

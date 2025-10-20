@@ -1,0 +1,21 @@
+{% extends "base.njk" %}
+
+{% block content %}
+  <div style="margin-top: 100px;">
+    {% if page.url == "/" %}
+      <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">A now-and-again blog</span>
+    {% endif %}
+
+    <h1 class="anton-regular heading">{{ title }}</h1>
+
+  </div>
+
+  {% if page.url == "/" %}
+    <span class="citation" style="margin-bottom:50px;display: block;">Milton, Paradise Lost, 1.77</span>
+  {% endif %}
+
+  {{ date }}
+
+  {{ content | safe }}
+
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-layout: "base.njk"
+layout: "index.njk"
 title: "With Floods and Whirlwinds of tempestuous fire"
 ---
 
@@ -9,9 +9,14 @@ title: "With Floods and Whirlwinds of tempestuous fire"
 {% for post in collections.posts %}
   <li>
     <article>
-      <a href="{{ post.url }}">{{ post.data.date }} {{ post.data.title }}</a>
+      <h3>{{ post.data.title }}</h3>
+      <div>{{ post.data.date }}</div>
+      <p>{{ post.data.preview }}</p>
+      <a href="{{ post.url }}">Continue reading</a>
     </article>
   </li>
 {% endfor %}
 </ul>
+
+
 
