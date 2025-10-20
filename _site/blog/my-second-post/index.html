@@ -74,6 +74,29 @@
       nav li a:hover {
         text-decoration: underline;
       }
+      figure {
+        border-left: 3px solid #f505f1ff;
+        padding: 20px 40px 10px 50px;
+        margin: 40px 0;
+      }
+      blockquote {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      blockquote p {
+        line-height: 30px;
+      }
+      .style1{
+        position: relative;
+      }
+      .style1:before {
+        content: "“";
+        font-family: serif;
+        font-size: 4.5rem;
+        left: 10px;
+        position: absolute;
+        top: -20px;
+      }
       @media (min-width: 768px) {
         .container {
           max-width: 720px;
@@ -107,7 +130,14 @@
   Published: 2025-10-31
 
   <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis convallis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut pellentesque enim, sit amet blandit magna. Proin mattis mi ac leo rhoncus vestibulum. Suspendisse sed sem sit amet mauris porta cursus molestie et massa.</p>
-<p>Aliquam vulputate nulla sit amet dui pulvinar, sit amet pretium dui pulvinar. Vestibulum enim ligula, convallis et ultricies sit amet, dignissim eu diam. Sed vitae risus nisi. Nam euismod quam diam, id aliquet arcu ultricies eu. Nullam lorem justo, blandit at mauris sit amet, mollis interdum mauris. Donec rhoncus sem lectus, a ullamcorper erat molestie quis. Pellentesque tempor eleifend leo, id elementum odio venenatis quis. Etiam mattis fringilla urna vel tincidunt. Proin sed pharetra dui.</p> &#8984; </p>
+<p>Aliquam vulputate nulla sit amet dui pulvinar, sit amet pretium dui pulvinar. Vestibulum enim ligula, convallis et ultricies sit amet, dignissim eu diam. Sed vitae risus nisi. </p>
+<figure class="style1">
+  <blockquote class="sorts-mill-goudy-regular-italic">
+    <p>We were already long overdue for a return to websites we control, rather than feeds manipulated by tech oligarchs.</p>
+  </blockquote>
+  <figcaption>— <cite class="anton-regular">Jay Hoffmann, lord of the skies and fire</cite></figcaption>
+</figure>
+<p>Nam euismod quam diam, id aliquet arcu ultricies eu. Nullam lorem justo, blandit at mauris sit amet, mollis interdum mauris. Donec rhoncus sem lectus, a ullamcorper erat molestie quis.</p> &#8984; </p>
 
 
       </div>
