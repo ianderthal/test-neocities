@@ -1,6 +1,6 @@
 ---
 title: "My second post"
-date: "2025-10-31"
+date: 2025-10-31
 ---
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis convallis condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut pellentesque enim, sit amet blandit magna. Proin mattis mi ac leo rhoncus vestibulum. Suspendisse sed sem sit amet mauris porta cursus molestie et massa.</p>

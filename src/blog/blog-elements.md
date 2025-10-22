@@ -1,6 +1,6 @@
 ---
 title: "Blog elements to design"
-date: "2025-10-19"
+date: 2025-10-19
 ---
 
 ## Elements that will require attention

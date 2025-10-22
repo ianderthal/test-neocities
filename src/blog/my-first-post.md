@@ -1,6 +1,6 @@
 ---
 title: "And this Empyreal substance cannot fail"
-date: "2025-10-12"
+date: 2025-10-12
 preview: "I think this is the beginning. For 200."
 ---
 

@@ -1,6 +1,7 @@
 {% extends "base.njk" %}
 
 {% block content %}
+<section class="blogpost">
   <div style="margin: 100px 0 75px;">
     <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">Published: {{ date }}</span>
     <h1 class="anton-regular heading">{{ title }}</h1>
@@ -8,6 +9,6 @@
 
   <p>{{ content | safe }}</p>
 
-  <a href="/blog">&larr; Return to All Blog Posts</a>
-
+  <a href="/blog" style="margin-top: 50px;display:block;">&larr; Return to All Blog Posts</a>
+</section>
 {% endblock %}
