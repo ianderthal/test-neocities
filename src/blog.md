@@ -11,7 +11,7 @@ layout: "base.njk"
   <article>
     <a href="{{ post.url }}">
       <h3>{{ post.data.title }}</h3>
-    </a><span class="d-inline-block">{{ post.data.date }}</span>
+    </a><span class="d-inline-block">{{ post.data.date | postDate }}</span>
     <p>{{ post.data.preview }}</p>
   </article>
 </li>

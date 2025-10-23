@@ -3,7 +3,7 @@
 {% block content %}
 <section class="blogpost">
   <div style="margin: 100px 0 75px;">
-    <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">Published: {{ date }}</span>
+    <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">{{ date | postDate }}</span>
     <h1 class="anton-regular heading">{{ title }}</h1>
   </div>
 
