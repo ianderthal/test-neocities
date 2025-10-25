@@ -3,7 +3,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' })
-      .toLocaleString(DateTime.DATE_MED);
+    .toFormat("EEEE, LLLL d',' yyyy");
   });
   return {
     dir: {
