@@ -4,19 +4,24 @@ title: "With Floods and Whirlwinds of tempestuous fire"
 ---
 
 ## Latest Posts
-
-<ul style="list-style: none;padding-left: 0;">
-{% for post in collections.posts %}
-  <li>
-    <article style="border-bottom: 1px solid #fff;padding: 1rem 1rem 1rem 0;">
-      <div style="width:100px;height:100px;background-color:#ddd;"></div>
-      <h3 class="anton-regular">{{ post.data.title }}</h3>
-      <div>{{ post.data.date | postDate }}</div>
-      <p>{{ post.data.preview }}</p>
-      <a href="{{ post.url }}">Continue reading</a>
-    </article>
-  </li>
-{% endfor %}
+<ul class="list-unstyled">
+  {% for post in collections.posts %}
+    <li class="mb-4 pb-4 border-bottom border-secondary-subtle">
+      <a href="{{ post.url }}" class="text-decoration-none text-reset">
+        <article class="d-flex gap-3 position-relative">
+          <div class="flex-shrink-0">
+            <div style="width:125px;height:75px;border:1px solid #fff;" ></div>
+          </div>
+          <div>
+            <small class="d-block">
+              {{ post.data.date | postDate }}
+            </small>
+            <h3 class="anton-regular">{{ post.data.title }}</h3>
+          </div>
+        </article>
+      </a>
+    </li>
+  {% endfor %}
 </ul>
 
 
