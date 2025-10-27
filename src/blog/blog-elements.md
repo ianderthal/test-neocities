@@ -8,5 +8,6 @@ date: 2025-10-19
 - images
 - embedded videos
 - buttons
-- list of blog posts
+- ~~list of blog posts~~
+- ~~blockquote~~
 - add buttons back to blogpost listing on blogpost template
