@@ -1,4 +1,5 @@
 {
   "layout": "blogpost.njk",
+  "eleventyTemplateEngine": "njk",
   "tags": "posts"
 }
