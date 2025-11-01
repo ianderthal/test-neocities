@@ -9,6 +9,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' })
     .toFormat("EEEE, LLLL d',' yyyy");
   });
+
+  eleventyConfig.addCollection("postsNewestFirst", (collection) =>
+  collection.getFilteredByTag("posts").sort((a, b) => b.date - a.date)
+  );
   return {
     dir: {
       input: "src",
