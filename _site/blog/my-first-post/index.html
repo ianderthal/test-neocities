@@ -10,116 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <style type="text/css">
-      body {
-        font-size: 1.2rem;
-        font-family: "Sorts Mill Goudy", serif;
-      }
-      .blogpost h2,
-      .blogpost h3 {
-        margin-top: 50px;
-      }
-      .anton-regular, h2 {
-        font-family: "Anton", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      .sorts-mill-goudy-regular {
-        font-family: "Sorts Mill Goudy", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
 
-      .sorts-mill-goudy-regular-italic {
-        font-family: "Sorts Mill Goudy", serif;
-        font-weight: 400;
-        font-style: italic;
-      }
-      .heading {
-        font-size: 48px;
-      }
-      .citation {
-        color: #888888ff;
-        font-size: 18px;
-        border-left: 7px solid #f505f1ff;
-        padding-left: 15px;
-      }
-      .tagline {
-        border-top: 1px solid #393939ff;
-        border-bottom: 1px solid #393939ff;
-        /* color: #f505f1ff; */
-        font-size: 24px;
-        padding: 20px 0;
-      }
-      a, a:link {
-        color: #f505f1ff;
-      }
-      a:hover,
-      a:active {
-        text-decoration: none;
-      }
-      .thing {
-        border-bottom: 1px solid #393939ff;
-      }
-      nav {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background-color: #000;
-      }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 15px 0;
-        display: flex;
-        gap: 1rem;
-      }
-      nav li a {
-        text-decoration: none;
-        font-weight: 500;
-      }
-      nav li a:hover {
-        text-decoration: underline;
-      }
-      figure {
-        border-left: 3px solid #f505f1ff;
-        padding: 20px 40px 10px 50px;
-        margin: 40px 0;
-      }
-      blockquote {
-        font-size: 30px;
-        font-weight: 700;
-      }
-      blockquote p {
-        line-height: 30px;
-      }
-      .style1{
-        position: relative;
-      }
-      .style1:before {
-        content: "“";
-        font-family: serif;
-        font-size: 4.5rem;
-        left: 10px;
-        position: absolute;
-        top: -20px;
-      }
-      @media (min-width: 768px) {
-        .container {
-          max-width: 720px;
-        }
-      }
     </style>
   </head>
-  <body class="text-white" style="background-color: #000;">
-    <nav class="thing">
-      <div class="container">
-        <ul>
+  <body class="text-white d-flex mx-auto" style="background-color:#000;max-width: 80rem;">
+    <div class="nav-container">
+      <div class="avatar mx-auto"></div>
+      <nav class="container">
+        <ul class="anton-regular text-end fs-2">
           <li><a href="/index">Home</a></li>
+          
           <li><a href="/blog">Blog</a></li>
+          
         </ul>
-      </div>
-    </nav>
-    <main class="container px-4">
+      </nav>
+    </div>
+    <main class="container" style="padding-left: 5rem;">
 
       <div class="mt-5">
       
@@ -143,7 +49,7 @@
       <h2 class="sorts-mill-goudy-regular-italic mt-5 tagline">I make things for the internet, displayed on little squares of glass everyone carries in their pockets.</h2>
 
     </main>
-    <footer class="container px-4" style="margin-top: 60px;">
+    <footer class="container px-4">
       <p class="sorts-mill-goudy-regular-italic">© 2025. Made with <a href="https://www.11ty.dev/">eleventy</a> and love.</p>
     </footer>
   </body>
