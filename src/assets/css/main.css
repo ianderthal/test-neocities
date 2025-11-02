@@ -44,12 +44,6 @@
   a:active {
     text-decoration: none;
   }
-  nav {
-    /* position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #000; */
-  }
   nav ul {
     list-style: none;
     margin: 0;
@@ -94,18 +88,39 @@
 .bloglist li:not(:last-child) {
   border-bottom: 1px solid #393939ff;
 }
-.avatar {
-  height:50px;
-  width:50px;
-  border-radius:25px;
-  background-color:#fff;
-  margin:8rem 0 5rem 0;
-}
 .nav-container {
-  width:10rem;
-  height:100vh;
-  position:sticky;
-  left:0;
-  top:0;
-  border-right:1px solid #393939ff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000;
+  border-bottom:1px solid #393939ff;
+}
+ul.navigation li {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .nav-container {
+    width:10rem;
+    height:100vh;
+    position:sticky;
+    left:0;
+    top:0;
+    border-right:1px solid #393939ff;
+  }
+  .loki {
+    display: flex;
+    max-width: 80rem;
+  }
+  .avatar {
+    height:50px;
+    width:50px;
+    border-radius:25px;
+    background-color:#fff;
+    margin:8rem 0 5rem 0;
+  }
+  ul.navigation li {
+    display: block;
+    text-align: right;
+  }
 }

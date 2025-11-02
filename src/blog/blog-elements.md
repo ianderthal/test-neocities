@@ -5,9 +5,10 @@ date: 2025-10-19
 
 ## Elements that will require attention
 
-- hero images
+- hero images for blogposts
 - images, content
 - embedded videos
+- code snippets
 - ~~buttons~~
 - ~~list of blog posts~~
 - ~~blockquote~~

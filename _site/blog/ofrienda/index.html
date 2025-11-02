@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>&quot;Am I a violent zombie or like...a chill zombie?&quot;</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | url }}">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <style type="text/css">
 
     </style>
@@ -19,25 +19,37 @@
       <nav class="container">
         <ul class="anton-regular fs-2 navigation">
           <li><a href="/index">Home</a></li>
-          {# <li><a href="/blog">About</a></li> #}
+          
           <li><a href="/blog">Blog</a></li>
-          {# <li><a href="/blog">Contact</a></li> #}
+          
         </ul>
       </nav>
     </div>
     <main class="container">
 
       <div class="mt-5">
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
+      
+<img src="/assets/images/.png" alt="" style="width: 100%;"/>
+
+<section class="blogpost">
+  <div style="margin: 100px 0 75px;">
+    <span class="sorts-mill-goudy-regular-italic" style="font-size: 18px;">Saturday, November 1, 2025</span>
+    <h1 class="anton-regular heading">&quot;Am I a violent zombie or like...a chill zombie?&quot;</h1>
+  </div>
+
+  <p><pre><code>BANANA: DETECTED.
+BANANA: REJECTED.
+</code></pre>
+</p>
+
+  <a href="/blog" style="margin-top: 50px;" class="btn btn-outline-light">&larr; Return to All Blog Posts</a>
+</section>
+
       </div>
 
       <h2 class="sorts-mill-goudy-regular-italic mt-5 tagline">I make things for the internet, displayed on little squares of glass everyone carries in their pockets.</h2>
 
     </main>
-    {# <footer class="container px-4">
-      <p class="sorts-mill-goudy-regular-italic">© 2025. Made with <a href="https://www.11ty.dev/">eleventy</a> and love.</p>
-    </footer> #}
+    
   </body>
 </html>
