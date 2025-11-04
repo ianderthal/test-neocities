@@ -107,6 +107,7 @@ ul.navigation li {
     left:0;
     top:0;
     border-right:1px solid #393939ff;
+    border-bottom: none;
   }
   .loki {
     display: flex;
